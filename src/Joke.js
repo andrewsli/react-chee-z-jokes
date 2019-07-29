@@ -13,11 +13,11 @@ class Joke extends Component {
   }
 
   handleUpvote() {
-    this.props.upvote(this.props.id);
+    this.props.vote(this.props.id, 1);
   }
 
   handleDownvote() {
-    this.props.downvote(this.props.id);
+    this.props.vote(this.props.id, -1);
   }
 
   renderUpvote() {
